@@ -4,4 +4,4 @@
 
 %h3 Make a new appointment
 
-= react_component('Appointments', appointments: @appointments)
+= react_component('Appointments', appointments: @appointments, csrf_token: form_authenticity_token)
