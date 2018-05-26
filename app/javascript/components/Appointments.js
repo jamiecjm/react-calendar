@@ -1,10 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
+import AppointmentForm from './AppointmentForm'
+import AppointmentList from './AppointmentList'
+
 class Appointments extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <h1>React Calendar</h1>
+        <AppointmentForm/>
+        <AppointmentList appointments={this.props.appointments}/>
       </React.Fragment>
     );
   }
